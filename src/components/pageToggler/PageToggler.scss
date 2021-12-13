@@ -1,0 +1,25 @@
+@import '../../variables';
+
+.page-togglers {
+  padding-top: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+.previous-page, .next-page {
+  @include fontForText;
+  color: $font-color;
+  font-size: $font-default-size-text;
+  cursor: pointer;
+}
+.previous-page::before {
+  display: inline-block;
+  content: url("./left.svg");
+  transform: translateY(10px);
+  margin-right: 30px;
+}
+.next-page::after {
+  display: inline-block;
+  content: url("./right.svg");
+  margin-left: 30px;
+  transform: translateY(10px);
+}

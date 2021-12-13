@@ -1,0 +1,33 @@
+@import '../../variables';
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.user-info {
+  flex-direction: column;
+  margin: 0 auto;
+  color: $font-color;
+  text-align: center;
+  font-size: $font-small-size-text;
+  @include fontForText;
+}
+
+.user-button {
+  display: block;
+  margin: 0 auto;
+  width: 248px;
+  background-color: $background-button;
+  color: $font-color;
+  border-radius: 40px;
+  line-height: 70px;
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+  @include fontForText;
+  font-weight: 600;
+  font-size: 24px;
+
+}

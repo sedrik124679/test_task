@@ -1,0 +1,21 @@
+// Colors
+$background-color: #12122d;
+$background-input: #333348;
+$background-button: #52519D;
+$font-color: #EEEEEE;
+$post-text-color: #FFFF;
+
+//Text sizing
+$logo-font-size: 24px;
+$font-small-size-text: 18px;
+$font-default-size-text: 24px;
+$font-title-size: 36px;
+
+$large-screen: 1470px;
+
+// Mixins
+@mixin fontForText {
+  font-family: Sora;
+  font-style: normal;
+  font-weight: normal;
+}

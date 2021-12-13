@@ -1,0 +1,18 @@
+@import '../../../variables.scss';
+input {
+  padding: 20px 0px 20px 35px;
+  border-radius: 40px;
+  border: none;
+  width: 210px;
+  background-color: $background-input;
+  color: $font-color;
+
+  font-size: $font-default-size-text;
+
+  @include fontForText;
+
+  &::placeholder {
+    color: $font-color;
+  }
+
+}

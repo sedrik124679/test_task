@@ -1,0 +1,9 @@
+@import 'variables.scss';
+
+.container {
+  max-width: $large-screen;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 66px;
+}

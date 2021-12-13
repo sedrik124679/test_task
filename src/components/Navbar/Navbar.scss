@@ -1,0 +1,14 @@
+@import '../../variables.scss';
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    @include fontForText;
+
+    font-size: $logo-font-size;
+
+    line-height: 70px;
+
+    color: #EEEEEE;
+  }
+}

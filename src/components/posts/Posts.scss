@@ -1,0 +1,46 @@
+@import '../../variables.scss';
+
+.posts-container {
+  background-color: $background-input;
+
+  min-height: 770px;
+  position: relative;
+  border-radius: 40px;
+  overflow: auto;
+  width: 100%;
+}
+
+details > summary::marker {
+  content: "";
+}
+.posts-wrapper {
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+.post {
+  details {
+    .post__title {
+      @include fontForText;
+      font-weight: 600;
+      font-size: $font-title-size;
+      color: $post-text-color;
+      cursor: pointer
+    }
+    .post__descr {
+      @include fontForText;
+      color: $post-text-color;
+      margin-top: 20px;
+      font-size: $font-small-size-text
+    }
+  }
+  hr {
+    margin-top: 30px;
+  }
+  &:last-child hr {
+    display: none;
+  }
+}
